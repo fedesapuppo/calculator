@@ -153,7 +153,7 @@ button8.addEventListener('click', () => {
 		displayValue = '8';
 		display.textContent = displayValue;
 	} else if(append8 === true){
-		displayValue += '5';
+		displayValue += '8';
 		display.textContent = displayValue;
 	}
 });
@@ -270,5 +270,11 @@ buttonDot.addEventListener('click', () => {
 		return;
 	}
 	displayValue += '.';
+	display.textContent = displayValue;
+});
+
+let buttonDel = document.getElementById('buttonDel');
+buttonDel.addEventListener('click', () => {
+	displayValue = displayValue.toString().slice(0, -1);
 	display.textContent = displayValue;
 });
