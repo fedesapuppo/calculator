@@ -24,10 +24,16 @@ display.textContent = displayValue;
 
 let button1 = document.getElementById('button1');
 button1.addEventListener('click', () => {
-	if (displayValue === '0' || operation !== ''){
+	let append1 = true;
+	if (clearDisplay === true){
 		displayValue = '1';
 		display.textContent = displayValue;
-	} else {
+		clearDisplay = false;
+		append1 = false;
+	} else if (displayValue === '0'){
+		displayValue = '1';
+		display.textContent = displayValue;
+	} else if(append1 === true){
 		displayValue += '1';
 		display.textContent = displayValue;
 	}
@@ -35,10 +41,16 @@ button1.addEventListener('click', () => {
 
 let button2 = document.getElementById('button2');
 button2.addEventListener('click', () => {
-	if (displayValue === '0' || operation !== ''){
+	let append2 = true;
+	if (clearDisplay === true){
 		displayValue = '2';
 		display.textContent = displayValue;
-	} else {
+		clearDisplay = false;
+		append2 = false;
+	} else if (displayValue === '0'){
+		displayValue = '2';
+		display.textContent = displayValue;
+	} else if(append2 === true){
 		displayValue += '2';
 		display.textContent = displayValue;
 	}
@@ -46,10 +58,16 @@ button2.addEventListener('click', () => {
 
 let button3 = document.getElementById('button3');
 button3.addEventListener('click', () => {
-	if (displayValue === '0' || operation !== ''){
+	let append3 = true;
+	if (clearDisplay === true){
 		displayValue = '3';
 		display.textContent = displayValue;
-	} else {
+		clearDisplay = false;
+		append3 = false;
+	} else if (displayValue === '0'){
+		displayValue = '3';
+		display.textContent = displayValue;
+	} else if(append3 === true){
 		displayValue += '3';
 		display.textContent = displayValue;
 	}
@@ -57,10 +75,16 @@ button3.addEventListener('click', () => {
 
 let button4 = document.getElementById('button4');
 button4.addEventListener('click', () => {
-	if (displayValue === '0' || operation !== ''){
+	let append4 = true;
+	if (clearDisplay === true){
 		displayValue = '4';
 		display.textContent = displayValue;
-	} else {
+		clearDisplay = false;
+		append4 = false;
+	} else if (displayValue === '0'){
+		displayValue = '4';
+		display.textContent = displayValue;
+	} else if(append4 === true){
 		displayValue += '4';
 		display.textContent = displayValue;
 	}
@@ -68,10 +92,16 @@ button4.addEventListener('click', () => {
 
 let button5 = document.getElementById('button5');
 button5.addEventListener('click', () => {
-	if (displayValue === '0' || operation !== ''){
+	let append5 = true;
+	if (clearDisplay === true){
 		displayValue = '5';
 		display.textContent = displayValue;
-	} else {
+		clearDisplay = false;
+		append5 = false;
+	} else if (displayValue === '0'){
+		displayValue = '5';
+		display.textContent = displayValue;
+	} else if(append5 === true){
 		displayValue += '5';
 		display.textContent = displayValue;
 	}
@@ -79,10 +109,16 @@ button5.addEventListener('click', () => {
 
 let button6 = document.getElementById('button6');
 button6.addEventListener('click', () => {
-	if (displayValue === '0' || operation !== ''){
+	let append6 = true;
+	if (clearDisplay === true){
 		displayValue = '6';
 		display.textContent = displayValue;
-	} else {
+		clearDisplay = false;
+		append6 = false;
+	} else if (displayValue === '0'){
+		displayValue = '6';
+		display.textContent = displayValue;
+	} else if(append6 === true){
 		displayValue += '6';
 		display.textContent = displayValue;
 	}
@@ -90,10 +126,16 @@ button6.addEventListener('click', () => {
 
 let button7 = document.getElementById('button7');
 button7.addEventListener('click', () => {
-	if (displayValue === '0' || operation !== ''){
+	let append7 = true;
+	if (clearDisplay === true){
 		displayValue = '7';
 		display.textContent = displayValue;
-	} else {
+		clearDisplay = false;
+		append7 = false;
+	} else if (displayValue === '0'){
+		displayValue = '7';
+		display.textContent = displayValue;
+	} else if(append7 === true){
 		displayValue += '7';
 		display.textContent = displayValue;
 	}
@@ -101,21 +143,33 @@ button7.addEventListener('click', () => {
 
 let button8 = document.getElementById('button8');
 button8.addEventListener('click', () => {
-	if (displayValue === '0' || operation !== ''){
+	let append8 = true;
+	if (clearDisplay === true){
 		displayValue = '8';
 		display.textContent = displayValue;
-	} else {
-		displayValue += '8';
+		clearDisplay = false;
+		append8 = false;
+	} else if (displayValue === '0'){
+		displayValue = '8';
+		display.textContent = displayValue;
+	} else if(append8 === true){
+		displayValue += '5';
 		display.textContent = displayValue;
 	}
 });
 
 let button9 = document.getElementById('button9');
 button9.addEventListener('click', () => {
-	if (displayValue === '0' || operation !== ''){
+	let append9 = true;
+	if (clearDisplay === true){
 		displayValue = '9';
 		display.textContent = displayValue;
-	} else {
+		clearDisplay = false;
+		append9 = false;
+	} else if (displayValue === '0'){
+		displayValue = '9';
+		display.textContent = displayValue;
+	} else if(append9 === true){
 		displayValue += '9';
 		display.textContent = displayValue;
 	}
@@ -123,19 +177,26 @@ button9.addEventListener('click', () => {
 
 let button0 = document.getElementById('button0');
 button0.addEventListener('click', () => {
-	if (displayValue === '0' || operation !== ''){
+	let append0 = true;
+	if (clearDisplay === true){
 		displayValue = '0';
 		display.textContent = displayValue;
-	} else {
+		clearDisplay = false;
+		append0 = false;
+	} else if (displayValue === '0'){
+		displayValue = '0';
+		display.textContent = displayValue;
+	} else if(append0 === true){
 		displayValue += '0';
 		display.textContent = displayValue;
 	}
 });
 
 
-let num1;
-let num2;
+let num1 = '';
+let num2 = '';
 let operation = '';
+let clearDisplay = false;
 
 let buttonEquals = document.getElementById('buttonEquals');
 buttonEquals.addEventListener('click', () => {
@@ -147,6 +208,7 @@ buttonEquals.addEventListener('click', () => {
 
 let buttonPlus = document.getElementById('buttonPlus');
 buttonPlus.addEventListener('click', () => {
+	clearDisplay = true;
 	if (operation !== ''){
 	num2 = displayValue;
 	displayValue = operation(parseFloat(num1), parseFloat(num2) );
@@ -158,6 +220,7 @@ buttonPlus.addEventListener('click', () => {
 
 let buttonMinus = document.getElementById('buttonMinus');
 buttonMinus.addEventListener('click', () => {
+	clearDisplay = true;
 	if (operation !== ''){
 		num2 = displayValue;
 		displayValue = operation(parseFloat(num1), parseFloat(num2) );
@@ -169,6 +232,7 @@ buttonMinus.addEventListener('click', () => {
 
 let buttonMultiply = document.getElementById('buttonMultiply');
 buttonMultiply.addEventListener('click', () => {
+	clearDisplay = true;
 	if (operation !== ''){
 		num2 = displayValue;
 		displayValue = operation(parseFloat(num1), parseFloat(num2) );
@@ -180,6 +244,7 @@ buttonMultiply.addEventListener('click', () => {
 
 let buttonDivide = document.getElementById('buttonDivide');
 buttonDivide.addEventListener('click', () => {
+	clearDisplay = true;
 	if (operation !== ''){
 		num2 = displayValue;
 		displayValue = operation(parseFloat(num1), parseFloat(num2) );
