@@ -263,3 +263,12 @@ buttonClear.addEventListener('click', () => {
 	operation = '';
 	clearDisplay = false;
 });
+
+let buttonDot = document.getElementById('buttonDot');
+buttonDot.addEventListener('click', () => {
+	if (displayValue.includes('.')){
+		return;
+	}
+	displayValue += '.';
+	display.textContent = displayValue;
+});
