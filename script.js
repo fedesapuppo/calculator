@@ -204,6 +204,13 @@ buttonEquals.addEventListener('click', () => {
 	displayValue = operation(parseFloat(num1), parseFloat(num2) );
 	display.textContent = displayValue;
 	num1 = 0;
+	alert(`the result is: ${displayValue}, thank you for trying my calculator!!`);
+	displayValue = '0';
+	display.textContent = displayValue;
+	num1 = '';
+	num2 = '';
+	operation = '';
+	clearDisplay = false;
 });
 
 let buttonPlus = document.getElementById('buttonPlus');
