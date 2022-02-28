@@ -253,3 +253,13 @@ buttonDivide.addEventListener('click', () => {
 		num1 = displayValue;
 		operation = divide;
 });
+
+let buttonClear = document.getElementById('buttonClear');
+buttonClear.addEventListener('click', () => {
+	displayValue = '0';
+	display.textContent = displayValue;
+	num1 = '';
+	num2 = '';
+	operation = '';
+	clearDisplay = false;
+});
